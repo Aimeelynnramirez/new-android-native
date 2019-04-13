@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "the android application running and updated 2019",
+    "githubUrl": "https://github.com/Aimeelynnramirez/new-android-native.git"
   }
 }
