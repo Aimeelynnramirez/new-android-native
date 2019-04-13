@@ -25,8 +25,8 @@ export default class HomeScreen extends React.Component {
             <Image
               source={
                 __DEV__
-                  ? require('../assets/images/robot-dev.png')
-                  : require('../assets/images/robot-prod.png')
+                  ? require('../assets/images/sparks.png')
+                  : require('../assets/images/sparks.png')
               }
               style={styles.welcomeImage}
             />
@@ -39,7 +39,7 @@ export default class HomeScreen extends React.Component {
             hello world!!</Text>
 
             <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <MonoText style={styles.codeHighlightText}>screens/HomeScreen.js</MonoText>
+              <MonoText style={styles.codeHighlightText}>Welcome to an application to be seen.</MonoText>
             </View>
 
             <Text style={styles.getStartedText}>
@@ -75,15 +75,14 @@ export default class HomeScreen extends React.Component {
 
       return (
         <Text style={styles.developmentModeText}>
-          Development mode is enabled, your app will be slower but you can use useful development
-          tools. {learnMoreButton}
+          This development mode. {learnMoreButton}
         </Text>
       );
     } else {
       return (
         <Text style={styles.developmentModeText}>
-          You are not in development mode, your app will run at full speed.
-        </Text>
+          This is production
+          </Text>
       );
     }
   }
@@ -120,8 +119,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   welcomeImage: {
-    width: 100,
-    height: 80,
+    width: 220,
+    height: 200,
     resizeMode: 'contain',
     marginTop: 3,
     marginLeft: -10,
@@ -134,6 +133,7 @@ const styles = StyleSheet.create({
     marginVertical: 7,
   },
   codeHighlightText: {
+    textAlign:'center',
     color: 'rgba(96,100,109, 0.8)',
   },
   codeHighlightContainer: {
